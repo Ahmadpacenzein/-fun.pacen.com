@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyemangatmu</title>
+</head>
+<body>
+    <div id="hasil-output"></div>
+ <div class="container">
+    <div class="gif">
+        <img src="https://i.giphy.com/media/57tYfygJ01PxLPL87z/giphy.webp" alt="LOPYU :3">
+     </div>
+      <h2>Semangat Jalani Hari-hari Kamu ya :3</h2>
+ </div>
+  <style>
+    
+       
+       
+    #hasil-output{
+        z-index: 1;
+        position: absolute;
+        margin-top: -150px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        
+       
+        font-size: 1.5em;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+      
+       
+    }
+    .container{
+        position: absolute;
+        margin:0 auto;
+        left: 50%;
+        transform: translate(-50%);
+        width: 400px;
+        height: 100vh;
+        background: url(https://img.freepik.com/free-vector/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.jpg?w=740&t=st=1668214871~exp=1668215471~hmac=a8ffcdd516f6c0f3ce7ac03b9d1dfddff8c9eef26f881ef5a6481b9c8e87a4c4);
+       
+    }
+    
+    img{
+        
+        position: absolute;
+        aspect-ratio: 1/1;
+        width: 200px;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+        border-radius: 30px;
+    }
+
+h2{
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 150px;
+    background-color: #FF8787;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 80%;
+}
+  </style>
+
+  <script>
+    var x = prompt('Hai, Siapa Nama Kamu?')
+        //objek
+        var hasil = document.getElementById("hasil-output")
+        //menampilkan output
+        hasil.innerHTML = 'Hai ' + x + ' Manis :)'
+  </script>
+</body>
+</html>
+
